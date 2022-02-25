@@ -1,0 +1,101 @@
+           05 00desc picture x(22) value 'Successful completion.'.      
+           05 01desc picture x(28) value 'Not a valid File status key.'.
+           05 02desc picture x(34) value 'Duplicate key (indexed files o
+      -        'nly.'.
+           05 03desc picture x(28) value 'Not a valid File status key.'. 
+           05 04desc picture x(23) value 'Record length mismatch.'.
+           05 05desc picture x(22) value 'Missing optional file.'.
+           05 06desc picture x(60) value 'Attempted to write to a file t  
+      -        'hat has been opened for input.'.
+           05 07desc picture x(40) value 'Referenced file is not on a ta
+      -        'pe device.'.
+           05 08desc picture x(48) value 'Attempted to read from a file 
+      -        'opened for output.'.
+           05 09desc picture x(50) value 'No room in directory or direct  
+      -        'ory does not exists.'.
+           05 10desc picture x(12) value 'End of file.'.
+  
+           05 12desc picture x(46) value 'Attempted to open a file that 
+      -        'is already open.'.
+           05 13desc picture x(23) value 'No next logical record.'.
+           05 14desc picture x(20) value 'Relative files only.'.
+           05 15desc picture x(100) value 'A sequential read statement i
+      -        's attempted for the first time on an optional file that 
+      -        'is not present.'. 
+           05 16desc picture x(27) value 'Too many device files open.'.
+           05 17desc picture x(13) value 'Record error.'.
+           05 18desc picture x(67) value 'Read part record error: EOF be
+      -        'fore EOR or file open in wronge mode.'.
+           05 19desc picture x(14) value 'Rewrite error.'.
+           05 20desc picture x(24) value 'Devise or resource busy.'.
+           05 21desc picture x(66) value 'Invalid key. Sequentially acce
+      -        'ssed indexed or relative files only.'.
+           05 22desc picture x(14) value 'Duplicate key.'.
+           05 23desc picture x(17) value 'Record not found.'.
+           05 24desc picture x(19) value 'Boundary violation.'.
+           05 25desc picture x(103) value 'A start statement or a random 
+      -        'read statement hab been attempted on an optional file th
+      -        'at is not present.'.
+
+           05 30desc picture x(46) value 'The I/O statement was unsucces
+      -        'sfully executed.'.
+           
+           05 32desc picture x(30) value 'Too many indexed files opened.
+      -        ''.
+
+           05 34desc picture x(19) value 'Boundary violation.'.
+           05 35desc picture x(15) value 'File not found.'.
+
+           05 37desc picture x(114) value 'An open statement was attempt 
+      -        'ed on a file that would not support the open mode specif
+      -        'ied in the open statement.'.
+           05 38desc picture x(73) value 'An open operation has been tri
+      -        'ed on a file previously closed with a lock.'.
+
+           05 41desc picture x(67) value 'An OPEN operation has been tri
+      -        'ed on a file which is already opened.'.
+           05 42desc picture x(85) value 'A CLOSE operation has been tri 
+      -       'ed on a file which is already closed (Or never opened).'.
+           05 43desc picture x(160) value 'Sequentially accessed files o
+      -        'nly. The last I/O statement executed for the file, befor
+      -        'e the execution of a delete or rewrite statement, was no
+      -        't a read statement.'.
+           05 44desc picture x(21) value 'Record size mismatch.'.               
+
+           05 46desc picture x(163) values 'Sequentially accessed files 
+      -        'only. A sequential read operation has been tried on a fi
+      -        'le open in the input or I-O mode but no valid next recor
+      -        'd has been established.'.
+           05 47desc picture x(83) value 'A read or start operation has 
+      -        'been tried on a file not opened in input or i-o mode.'.    
+           05 48desc picture x(142) value 'A write operation has been at
+      -        'tempted on a file not opened in the output, I-O, or exte
+      -        'nd mode, or on a file open in the sequential access mode
+      -        '.'.
+           05 49desc picture x(94) value 'An attempt was made to delete 
+      -        'or rewrite of an upopen file, or of a file not open in I
+      -        '-O mode.'.
+
+           05 90desc picture x(109) value 'For multithreading only: a cl
+      -        'ose of a VSAM or QSAM file was attempted on a thread tha
+      -        't did not open the file.'.
+           05 91desc picture x(32) value 'For VSAM only. Incorrect passwor
+      -        'd.'. 
+           05 92desc picture x(29) value 'For VSAM only. Logical error.'
+               .
+           05 93desc picture x(126) value 'For VSAM only. Recourse not a
+      -        'valiable, insufficient storage, no more extents availabl
+      -        'e, file already under exclusive control.'.
+           05 94desc picture x(97) value 'For VSAM with CMPR2 compiler-o
+      -        'ption only: No file position indicator for sequential re
+      -        'ad request.'.       
+           05 95desc picture x(54) value 'For VSAM only. Invalid or inco
+      -        'mplete file information.'.
+           05 96desc picture x(73) value 'For VSAM file: An open stateme
+      -        'tment with the output phrase was attempted.'.
+           05 97desc picture x(46) value 'For VSAM only. File not closed 
+      -        'by previous job.'.    
+           05 98desc picture x(35) value 'File is locked or index is cor
+      -        'rupt.'.    
+           05 99desc picture x(51) value 'Record locked by another user-
+      -        'record access failed.'.      
